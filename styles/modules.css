@@ -1,0 +1,79 @@
+/* Global settings*/
+
+    /* Fonts */
+    .text-main{
+        font-family: var(--tipo-black);
+        color: var(--color-white);
+    }
+    .text-subtitle{
+        font-family: var(--tipo-italic);
+    }
+    .text-tagline{
+        font-family: var(--tipo-bold);
+        color: var(--color-green);
+    }
+    .text-body{
+        font-family: var(--tipo-medium);
+    }
+
+/* sections*/
+
+    /* Welcome */
+    .welcome__hero-team{
+        background-position: center;
+        background-size: cover;
+        background-image: url(../assets/news/welcome-pro.webp);
+        background-repeat: no-repeat;
+    }
+    .welcome__hero-team::after{
+        background: linear-gradient(rgb(0, 0, 0, 0%), #181B21);
+    }
+
+    /* training */
+    .tabs__icons{
+        border-bottom: var(--color-green) 2.5rem solid;
+    }
+    .icon-tab path {
+        fill: var(--color-white);
+    }
+
+    /* Becados */
+    .becados__slider-item div{
+        background-color: var(--color-green);
+    }
+    .becados__slider-item div p{
+        color: var(--color-black);
+    }
+    .becados__svg-item polygon{
+        fill: var(--color-orange);
+    }
+
+    /* Staff */
+    .staff__people{
+        border-left: var(--color-green) 2.5rem solid;
+    }
+
+    /* contact */
+    .contact__rss li svg path{
+        fill: var(--color-orange);
+    }
+
+    /* modal courts */
+    .cards{
+        background-color: var(--color-green);
+    }
+    .cards__container-item div{
+        background-color: var(--color-white);
+    }
+    .cards__container-item h3{
+        font-family: var(--tipo-italic);
+        color: var(--color-black);
+    }
+    .cards__container-item p{
+        color: var(--color-orange);
+    }
+    .cards__title{
+        font-family: var(--tipo-black);
+        color: var(--color-black);
+        text-transform: uppercase;
+    }

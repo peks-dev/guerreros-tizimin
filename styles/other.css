@@ -1,0 +1,17 @@
+/* Training section*/
+    .icon-tab--active{
+        fill: var(--color-green);
+    }
+    .tabs__windows-item--active{
+        visibility: visible;
+    }
+
+/* Contact section*/
+    .contact__rss li svg path:hover{
+        fill: var(--color-white);
+    }
+
+/* modal canchas secton */
+    .courts--active{
+        visibility: visible;
+    }

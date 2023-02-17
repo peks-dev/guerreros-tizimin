@@ -1,0 +1,515 @@
+/* Global settings*/
+
+    /* Fonts */
+    .text-main{
+        font-size: clamp(15rem,5vw,35rem);
+        line-height: 25rem;
+    }
+    .text-subtitle{
+        font-size: clamp(15rem,6vw,25rem);
+        line-height: normal;
+    }
+    .text-tagline{
+        font-size: clamp(9rem,2vw,15rem);
+        line-height: normal;
+        letter-spacing: 1.5rem;
+    }
+    .text-body{
+        font-size: clamp(9rem,3vw,12.5rem);
+        line-height: 17.5rem;
+        
+    }
+
+/* sections */
+
+    /* welcome */
+    .welcome{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100vw;
+        height: auto;
+    }
+    .welcome__hero{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome__hero-team{
+        position: relative;
+        width: 100%;
+        height: 30%;
+        min-height: 150rem;
+        position: relative;
+        z-index: 1;
+    }
+    .welcome__hero-team::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    .welcome__hero-logo{
+        width: clamp(60rem,10vw,200rem);
+        margin-top: -20%;
+        position: relative;
+        z-index: 2;
+    }
+    .welcome__content{
+        flex: 1 1 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 5%;
+    }
+    .welcome__content h1{
+        word-break: keep-all;
+    }
+    .welcome__gallery{
+        flex: 1 1 350px;
+        margin: 10rem auto 0 auto;
+        padding: 0 5%;
+    }
+    .welcome__gallery div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20rem;
+    }
+    .welcome__gallery div img{
+        width: 40%;
+    }
+
+    /* training */
+    .training{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15rem;
+        width: 100vw;
+        height: 100vh;
+        padding: 0 5%;
+    }
+    .training__header{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 10rem;
+        text-align: center;
+        word-break: keep-all;
+        width: 100%;
+        margin-top: 40rem;
+    }
+    .training__tabs{
+        width: 100%;
+        max-width: 280rem;
+        height: 50%;
+    }
+    .training__img-tab img{
+        border-radius: 10rem;
+    }
+    .tabs__icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        min-width: 160rem;
+        padding-bottom: 10rem;
+    }
+    .tabs__icons-item{
+        width: 25%;
+        height: 100%;
+    }
+    .tabs__icons-item svg{
+        margin: 0 auto;
+        width: clamp(25rem,10vw,50rem);
+        height: clamp(25rem,10vw,50rem);
+    }
+    
+    
+    .tabs__windows{
+        position: relative;
+        width: 100%;
+        height: 80%;
+    }
+    .tabs__windows-item{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        visibility: hidden;
+    }
+    .tabs__windows-item h3{
+        margin: 20rem auto 10rem auto;
+        color: var(--color-green);
+    }
+
+    /* becados*/
+    .becados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        padding: 0 5%;
+    }
+    .becados header{
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10rem;
+        width: 90%;
+    }
+    .becados header h2{
+        word-break: keep-all;
+    }
+   .becados__slider{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+   }
+   .becados__slider-item{
+        position: relative;
+        min-width: 100%;
+        max-width: 200rem;
+        scroll-snap-align: center;
+        padding-top: 20rem;
+   }
+   .becados__slider-item img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: clamp(65rem, 13vw,130rem);
+        height: clamp(65rem, 13vw,130rem);
+        border-radius: 100px;
+   }
+   .becados__slider-item h3{
+        text-align: right;
+        padding-right: 10%;
+        margin-bottom: 10rem;
+   }
+   .becados__slider-item div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 10rem;
+        width: 85%;
+        height: 63rem;
+        border-radius: 10rem;
+        margin: 0 0 0 auto;
+   }
+   .becados__slider-item div p{
+        font-size: clamp(9rem,3vw,12.5rem);
+        width: 70%;
+        line-height: 14rem;
+   }
+
+   .becados__svg{
+        width: clamp(40rem,5vw,80rem);
+        position: absolute;
+        bottom:0;
+        right: 2%;
+   }
+   
+
+   /* staff section*/
+   .staff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        
+   }
+   .staff header{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        width: 90%;
+        margin-bottom: 25rem;
+   }
+   .staff header h2{
+        width: 80%;
+        word-break: keep-all;
+   }
+   .staff__people{
+        width: 90%;
+   }
+   .staff__people-item{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        padding-left: 25rem;
+        margin: 25rem 0 25rem 0;
+   }
+   .staff__people-item img{
+        width: 75rem;
+        border-radius: 50rem;
+   }
+   
+   /* Contact section */
+   .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+   }
+   .contact header{
+        width: 90%;
+   }
+   .contact header img{
+        width: 75rem;
+        height: 75rem;
+        margin: 0 auto;
+   }
+   .contact__img{
+        width: 90%;
+        border-radius: 10rem;
+   }
+   .contact__buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+   }
+   .contact__rss{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25rem;
+   }
+   .contact__rss li svg{
+        width: 30rem;
+        height: 30rem;
+   }
+   
+
+   /* modal canchas*/
+   .courts{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        transition: all ease 0.5s;
+        z-index: 2;
+   }
+   .courts__button{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: clamp(25rem, 10vw, 50rem);
+        height: clamp(25rem, 10vw, 50rem);;
+   }
+   .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        padding-top: 20rem;
+        border-radius: 10rem 10rem 0 0;
+   }
+   .cards__container{
+        min-width: 100vw;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+   }
+   .cards__container-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width:100%;
+        height: 90%;
+        scroll-snap-align: center;
+   }
+   .cards__container-item div{
+        width: 90%;
+        max-width: 175rem;
+        height: 100%;
+        max-height: 250rem;
+        border-radius: 10rem;
+        box-shadow: -2px 0px 12px 0px rgba(0,0,0,0.42);
+        -webkit-box-shadow: -2px 0px 12px 0px rgba(0,0,0,0.42);
+        -moz-box-shadow: -2px 0px 12px 0px rgba(0,0,0,0.42);;
+   }
+   .cards__container-item h3{
+        font-size: clamp(15rem,5vw,17.5rem);
+        line-height: normal;
+        padding: 10rem;
+   }
+   .cards__container-item p{
+        padding-left: 15rem;
+        line-height: 15rem;
+   }
+   .cards__title{
+        font-size: clamp(15rem, 6vw, 31rem);
+        line-height: normal;
+        text-align: center;
+   }
+   .cards__icon{
+        width: clamp(40rem,9vw,50rem);
+   }
+   .mapa{
+        border-radius: 10rem;
+        height: 60%;
+        width: 100%;
+   }
+
+/* Responsive design */
+
+   /* Tablet view*/
+   @media (min-width: 768px){
+
+        /* section welcome*/
+        .welcome__hero-team{
+            height: 300rem;
+        }
+        .welcome__content{
+            margin-top: 30rem;
+            text-align: left;
+            align-items: flex-start;
+        }
+        .welcome__gallery{
+            margin-top: 30rem;
+        }
+
+        /*section becados*/
+        .becados{
+            flex-direction: row;
+            height: 60vh;
+        }
+
+        .becados__slider{
+            order: 1;
+        }
+        .becados header{
+            order:  2;
+        }
+        .becados header p{
+            width: 80%;
+        }
+        .becados__slider-item h3{
+            padding-right: 0;
+        }
+        .becados__slider-item div{
+            padding-left: 15%;
+        }
+        .becados__slider-item div p{
+            width: 100%;
+        }
+        .becados__svg{
+            left: 15%;
+            right: 0;
+            bottom: 20%;
+        }
+
+        /* section staff*/
+        .staff{
+            flex-direction: row;
+            padding: 0 5%;
+            align-items: start
+        }
+        .staff header p{
+            width: 90%;
+        }
+        .staff__people{
+            margin-top: 30%;
+        }
+
+    }
+
+    @media (min-width: 1280px){
+        /*fonts*/
+        .text-main{
+            line-height: 40rem;
+        }
+
+        /*section welcome*/
+        .welcome__hero{
+            height: 100vh;
+            justify-content: flex-start;
+        }
+        .welcome__hero-team{
+            height: 100%;
+        }
+        .welcome__content{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .welcome__gallery{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /*section training*/
+        .training{
+            flex-flow: row wrap;
+        }
+        .training__tabs{
+            width: 50%;
+        }
+        .training__img-tab{
+            width: 40%;
+        }
+
+        /* section becados*/
+        .becados{
+            height: 100vh;
+        }
+        .becados__slider-item h3{
+            text-align: center;
+            padding-left: 10%;
+        }
+
+        /*section contact*/
+        .contact{
+            height: 100vh;
+            flex-flow: row wrap;
+        }
+        .contact__img{
+            width: 40%;
+        }
+        .contact__buttons{
+            padding: 0 10rem;
+        }
+    }
+
+
+    
